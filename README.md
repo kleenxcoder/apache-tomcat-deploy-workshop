@@ -12,7 +12,7 @@
 
 ### tomcat-users.xml
 
-[sample code](config/tomcat/tomcat-users.xml)
+[sample code](config/apache-tomcat/tomcat-users.xml)
 
 ```xml
 <tomcat-users>
