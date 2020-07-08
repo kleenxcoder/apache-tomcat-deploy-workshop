@@ -1,4 +1,4 @@
-# Deploying Spring Boot application to Apache Tomcat
+# Deploying Java application to Apache Tomcat
 > This will give you a short overview how to configure server and your project to be able to use maven to deploy your source to tomcat.
 
 ## Setup
