@@ -2,12 +2,14 @@
 > The accompanying code for this workshop is [on Github](https://github.com/kleenxcoder/apache-tomcat-deploy-workshop).<br/>
 This will give you a short overview how to configure server and your project to be able to use maven to deploy your source to tomcat.
 
+
 ## Setup
 - In this workshop you'll need the latest Java version. Java 8 is the baseline for this workshop.
 - You'll need a newer, 3.1, version of Apache Maven installed.
 - Use ure desired IDE Apache NetBeans, Eclipse, IntelliJ IDEA, Visual Studio Code or vi
 - Patch your IDE with lombok https://projectlombok.org/setup/overview
 - Runnable local installation of Apache Tomcat https://tomcat.apache.org/
+
 
 ## Apache Tomcat configuration
 
@@ -22,6 +24,7 @@ This will give you a short overview how to configure server and your project to 
         <user username="manager" password="password" roles="manager-gui,manager-script" />  
 </tomcat-users>
 ```
+
 
 ## Maven setting
 
@@ -59,6 +62,7 @@ This will give you a short overview how to configure server and your project to 
 </servers>
 ```
 
+
 ## Project configuration
 > To make use of tomcat7-maven-plugin we need to add the plugin to our build section.
 
@@ -78,6 +82,7 @@ This will give you a short overview how to configure server and your project to 
 	</configuration>
 </plugin>
 ```
+
 
 ## Deployment to Apache Tomcat
 
@@ -99,6 +104,7 @@ mvn tomcat7:deploy -P<server-id>
 mvn tomcat7:deploy -Pdevelopment
 ```
 
+
 ## Setup java project
 > To make your project running in the Apache Tomcat servlet container we need to make use of Spring Boot ServletInitializer.
 
@@ -107,11 +113,13 @@ mvn tomcat7:deploy -Pdevelopment
 
 ### Custom java project migration
 
-## Security
-> I recomand to use a different phrase than "password" for authentification on your system.
 
 ## Testing time
 > I have attached a spring boot application to this repository [apache-tomcat-deploy-workshop](code-java/apache-tomcat-deploy-workshop/). You run it locally in your IDE as spring boot application and you can deploy it to your tomcat. Both ways should result in the same result. You should get response from from following REST service http://localhost:8080/apache-tomcat-deploy-workshop/kleenxcoder/
+
+
+## Security
+> I recomand to use a different phrase than "password" for authentification on your system.
 
 
 ## Tested with
