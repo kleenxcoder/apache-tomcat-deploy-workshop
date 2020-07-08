@@ -12,7 +12,7 @@ This will give you a short overview how to configure server and your project to 
 - Open project [apache-tomcat-deploy-workshop](code-java/apache-tomcat-deploy-workshop/) in your IDE
 
 <br/><br/>
-## * Apache Tomcat configuration
+* ## Apache Tomcat configuration
 
 ### tomcat-users.xml
 
