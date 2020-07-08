@@ -1,5 +1,5 @@
 # Deploying Java application to Apache Tomcat
-> The accompanying code for this workshop is [on Github](https://github.com/kleenxcoder/apache-tomcat-deploy-workshop). 
+> The accompanying code for this workshop is [on Github](https://github.com/kleenxcoder/apache-tomcat-deploy-workshop).<br/>
 This will give you a short overview how to configure server and your project to be able to use maven to deploy your source to tomcat.
 
 ## Setup
