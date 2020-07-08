@@ -1,8 +1,8 @@
 # Deploying Java application to Apache Tomcat
 > The accompanying code for this workshop is [on Github](https://github.com/kleenxcoder/apache-tomcat-deploy-workshop).<br/>
 This will give you a short overview how to configure server and your project to be able to use maven to deploy your source to tomcat.
-
 <br/>
+
 ## 1 Setup
 - In this workshop you'll need the latest Java version. Java 8 is the baseline for this workshop.
 - You'll need a newer, 3.1, version of Apache Maven installed.
@@ -10,8 +10,8 @@ This will give you a short overview how to configure server and your project to 
 - Patch your IDE with lombok https://projectlombok.org/setup/overview
 - Runnable local installation of Apache Tomcat https://tomcat.apache.org/
 - Open project [apache-tomcat-deploy-workshop](code-java/apache-tomcat-deploy-workshop/) in your IDE
-
 <br/>
+
 ## 2 Apache Tomcat configuration
 
 ### tomcat-users.xml
@@ -25,8 +25,8 @@ This will give you a short overview how to configure server and your project to 
         <user username="manager" password="password" roles="manager-gui,manager-script" />  
 </tomcat-users>
 ```
+<br/>
 
-<br/><br/>
 ## 3 Maven setting
 
 ### settings.xml
