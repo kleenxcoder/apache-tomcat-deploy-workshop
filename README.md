@@ -29,6 +29,25 @@
 
 [sample code](config/apache-maven/settings.xml)
 
+#### Adding server profiles
+
+```xml
+<profiles>
+	<profile>
+		<id>localhost</id>
+		<activation>
+			<activeByDefault>true</activeByDefault>
+		</activation>
+		<properties>
+			<tomcat-server>localhost</tomcat-server>
+			<tomcat-url>http://localhost:8080/manager/text</tomcat-url>
+		</properties>
+	</profile>
+</profiles>
+```
+
+#### Adding credentials
+
 ```xml
 <servers>  
     <server>
