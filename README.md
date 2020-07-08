@@ -1,5 +1,6 @@
 # Deploying Java application to Apache Tomcat
-> The accompanying code for this workshop is [on Github](https://github.com/kleenxcoder/apache-tomcat-deploy-workshop). return This will give you a short overview how to configure server and your project to be able to use maven to deploy your source to tomcat.
+> The accompanying code for this workshop is [on Github](https://github.com/kleenxcoder/apache-tomcat-deploy-workshop). 
+This will give you a short overview how to configure server and your project to be able to use maven to deploy your source to tomcat.
 
 ## Setup
 - In this workshop you'll need the latest Java version. Java 8 is the baseline for this workshop.
