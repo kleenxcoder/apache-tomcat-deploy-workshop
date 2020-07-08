@@ -8,7 +8,7 @@
 - Patch your IDE with lombok https://projectlombok.org/setup/overview
 - Runnable local installation of Apache Tomcat https://tomcat.apache.org/
 
-## Server side configuration
+## Apache Tomcat configuration
 
 ### tomcat-users.xml
 ```xml
@@ -19,7 +19,25 @@
 </tomcat-users>
 ```
 
+## Maven setting
+
+### settings.xml
+> Usually stored in either in your maven installation folder or your .m2 folder. Windows user got to %UserProfile%\.m2
+
+```xml
+<servers>  
+    <server>
+       <id>LocalhostServer</id>
+       <username>manager</username>
+       <password>password</password>
+    </server>
+</servers>
+```
+
 ## Client side configuration
+
+## Security
+> I recomand to use a different phrase than "password" for authentification on you system.
 
 ## Tested with
 - Jdk 8 & Tomcat 7
