@@ -90,7 +90,7 @@ This will give you a short overview how to configure server and your project to 
 ### Manually using manager
 > Assuming your java project creates a WAR file you are ready to go. If not  After changing tomcat-users.xml you are ready to go for manual deployment. Open http://localhost:8080/manager/ in your browser and use credentials stored in tomcat-users.xml to login. Got to "WAR file to deploy", select your WAR file and press the "deploy" button.
 
-### Command line using Tomcat7 plugin
+### Automated using command line
 > Previously we have set our profile 'localhost' activeByDefault = true. In this case when you do not provide a profile our localhost will be used by default. We can deploy our application to localhost by using following command
 
 ```powershell
