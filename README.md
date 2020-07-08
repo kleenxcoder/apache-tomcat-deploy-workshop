@@ -27,7 +27,7 @@
 ### settings.xml
 > Usually stored in either in your maven installation folder or your .m2 folder. Windows user got to %UserProfile%\.m2
 
-[sample code](config/maven/settings.xml)
+[sample code](config/apache-maven/settings.xml)
 
 ```xml
 <servers>  
@@ -39,7 +39,15 @@
 </servers>
 ```
 
-## Client side configuration
+## Project configuration
+
+### pom.xml
+
+## Deployment to Apache Tomcat
+
+### Manually using manager
+
+### Command line using Tomcat7 plugin
 
 ## Security
 > I recomand to use a different phrase than "password" for authentification on you system.
