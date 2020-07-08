@@ -68,6 +68,14 @@
 
 ### Command line using Tomcat7 plugin
 
+## Java Project
+> To make your project running in the Apache Tomcat servlet container we need to make use of Spring Boot ServletInitializer.
+
+### New java project
+> When creating a new java project by using [start.spring.io](https://start.spring.io/) and selecting WAR packaging you do not need to do anything. Spring initializr will create a seperate file called ServletInitializer.java which does the job.
+
+### Custom java project migration
+
 ## Security
 > I recomand to use a different phrase than "password" for authentification on you system.
 
