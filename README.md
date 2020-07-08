@@ -86,11 +86,19 @@
 > Assuming your java project creates a WAR file you are ready to go. If not  After changing tomcat-users.xml you are ready to go for manual deployment. Open http://localhost:8080/manager/ in your browser and use credentials stored in tomcat-users.xml to login. Got to "WAR file to deploy", select your WAR file and press the "deploy" button.
 
 ### Command line using Tomcat7 plugin
+> Previously we have set our profile 'localhost' activeByDefault = true. In this case when you do not provide a profile our localhost will be used by default. We can deploy our application to localhost by using following command:
 
 ```powershell
-mvn deploy
+mvn tomcat7:deploy
 ```
 
+> In real life you will have several servers and several passwords. In this case settings.xml comes in handy. We have one place for setting up our infrastucture and managing credentials. Make sure not to store these settings in pom.xml to avoid duplicate work and unnecessary storege and configuration duplication. 
+Have a closer look at at [pom.xml](code-java/apache-tomcat-deploy-workshop/pom.xml) where I already have provided a second sever. All you need to do is to replace localhost by the name of your host. To deploy our example application to this sever all we need to do is pass the server id by using prefix '-P':
+
+```powershell
+mvn tomcat7:deploy -P<server-id>
+mvn tomcat7:deploy -Pdevelopment
+```
 
 ## Setup java project
 > To make your project running in the Apache Tomcat servlet container we need to make use of Spring Boot ServletInitializer.
