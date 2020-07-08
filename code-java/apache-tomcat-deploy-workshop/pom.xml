@@ -49,6 +49,16 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<url>${tomcat-url}</url>
+					<server>${tomcat-server}</server>
+					<path>/${artifactId}</path>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
