@@ -116,7 +116,7 @@ Tomcat7 maven plugin supports further goals. Hence see documentation http://tomc
 <br/>
 
 ## 6 Testing time
-> I have attached a spring boot application to this repository [apache-tomcat-deploy-workshop](code-java/apache-tomcat-deploy-workshop/). You run it locally in your IDE as spring boot application and you can deploy it to your tomcat. Both ways should result in the same result. You should get response from from following REST service http://localhost:8080/apache-tomcat-deploy-workshop/kleenxcoder/
+> I have attached a spring boot application to this repository [apache-tomcat-deploy-workshop](code-java/apache-tomcat-deploy-workshop/). You can either run it locally in your IDE as spring boot application or deploy it to your tomcat. Both ways should end up in the same result. You should get response from following REST service http://localhost:8080/apache-tomcat-deploy-workshop/kleenxcoder/
 
 <br/>
 
