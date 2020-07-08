@@ -131,6 +131,9 @@ mvn tomcat7:deploy -Pdevelopment
 - Jdk 8 & Tomcat 8
 - Jdk 8 & Tomcat 9
 
+## References
+- https://github.com/apache/tomcat-maven-plugin
+
 ## Contact
 > If you have any questions don't hesitate to reach out to me. Probably twitter will be the fastest way!
 
