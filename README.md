@@ -9,6 +9,7 @@ This will give you a short overview how to configure server and your project to 
 - Use ure desired IDE Apache NetBeans, Eclipse, IntelliJ IDEA, Visual Studio Code or vi
 - Patch your IDE with lombok https://projectlombok.org/setup/overview
 - Runnable local installation of Apache Tomcat https://tomcat.apache.org/
+- Open project [apache-tomcat-deploy-workshop](code-java/apache-tomcat-deploy-workshop/) in your IDE
 
 
 ## Apache Tomcat configuration
