@@ -87,6 +87,11 @@
 
 ### Command line using Tomcat7 plugin
 
+```powershell
+mvn deploy
+```
+
+
 ## Setup java project
 > To make your project running in the Apache Tomcat servlet container we need to make use of Spring Boot ServletInitializer.
 
