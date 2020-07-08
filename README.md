@@ -62,7 +62,7 @@ This will give you a short overview how to configure server and your project to 
     </server>
 </servers>
 ```
-
+<br/>
 
 ## 4 Project configuration
 > To make use of tomcat7-maven-plugin we need to add the plugin to our build section.
@@ -83,7 +83,7 @@ This will give you a short overview how to configure server and your project to 
 	</configuration>
 </plugin>
 ```
-
+<br/>
 
 ## 5 Deployment to Apache Tomcat
 
@@ -112,15 +112,15 @@ mvn tomcat7:redeploy -Pdevelopment
 
 ### Further commands
 Tomcat7 maven plugin supports further goals. Hence see documentation http://tomcat.apache.org/maven-plugin-trunk/tomcat7-maven-plugin/plugin-info.html
-
+<br/>
 
 ## 6 Testing time
 > I have attached a spring boot application to this repository [apache-tomcat-deploy-workshop](code-java/apache-tomcat-deploy-workshop/). You run it locally in your IDE as spring boot application and you can deploy it to your tomcat. Both ways should result in the same result. You should get response from from following REST service http://localhost:8080/apache-tomcat-deploy-workshop/kleenxcoder/
-
+<br/>
 
 ## 7 Security
 > I recomand to use a different phrase than "password" for authentification on your system.
-
+<br/>
 
 ## 8 Troubleshooting
 > To make your project running in Apache Tomcat servlet container we need to make use of Spring Boot ServletInitializer.
@@ -132,15 +132,17 @@ Tomcat7 maven plugin supports further goals. Hence see documentation http://tomc
 > When you have an older spring boot application you will need to do some modifiactions to get it running. In this case go a head and use your favorite search engine and lookup for "Deploy a Spring Boot WAR into a Tomcat Server".
 
 ### Non spring projects
-
+<br/>
 
 ## 9 Tested with
 - Jdk 8 & Tomcat 7
 - Jdk 8 & Tomcat 8
 - Jdk 8 & Tomcat 9
+<br/>
 
 ## 10 References
 - https://github.com/apache/tomcat-maven-plugin
+<br/>
 
 ## 11 Contact
 > If you have any questions don't hesitate to reach out to me. Probably twitter will be the fastest way!
