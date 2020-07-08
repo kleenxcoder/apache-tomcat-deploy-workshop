@@ -25,7 +25,7 @@
 ## Maven setting
 
 ### settings.xml
-> Usually stored in either in your maven installation folder or your .m2 folder. Windows user got to %UserProfile%\.m2
+> Usually stored in either in your maven installation folder or your .m2 folder. Windows user got to %UserProfile%\\.m2
 
 [sample code](config/apache-maven/settings.xml)
 
