@@ -39,7 +39,15 @@
 </servers>
 ```
 
-## Client side configuration
+## Project configuration
+
+### pom.xml
+
+## Deployment to Apache Tomcat
+
+### Manually using manager
+
+### Command line using Tomcat7 plugin
 
 ## Security
 > I recomand to use a different phrase than "password" for authentification on you system.
