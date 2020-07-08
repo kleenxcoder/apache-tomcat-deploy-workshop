@@ -1,4 +1,6 @@
 # Deploying Java application to Apache Tomcat
+[![Apache 2.0](https://img.shields.io/github/license/making/yavi.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+
 > The accompanying code for this workshop is [on Github](https://github.com/kleenxcoder/apache-tomcat-deploy-workshop).<br/>
 This will give you a short overview how to configure server and your project to be able to use maven to deploy your source to tomcat.
 <br/>
