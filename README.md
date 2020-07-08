@@ -30,7 +30,7 @@ This will give you a short overview how to configure server and your project to 
 ## 3 Maven setting
 
 ### settings.xml
-> Usually stored in either in your maven installation folder or your .m2 folder. Windows user got to %UserProfile%\\.m2
+> Usually stored in your maven installation folder or your .m2 folder. Windows user got to %UserProfile%\\.m2
 
 [sample code](config/apache-maven/settings.xml)
 
