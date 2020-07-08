@@ -3,7 +3,7 @@
 This will give you a short overview how to configure server and your project to be able to use maven to deploy your source to tomcat.
 
 <br/><br/>
-## Setup
+## 1 Setup
 - In this workshop you'll need the latest Java version. Java 8 is the baseline for this workshop.
 - You'll need a newer, 3.1, version of Apache Maven installed.
 - Use ure desired IDE Apache NetBeans, Eclipse, IntelliJ IDEA, Visual Studio Code or vi
@@ -12,7 +12,7 @@ This will give you a short overview how to configure server and your project to 
 - Open project [apache-tomcat-deploy-workshop](code-java/apache-tomcat-deploy-workshop/) in your IDE
 
 <br/><br/>
-## Apache Tomcat configuration
+## 2 Apache Tomcat configuration
 
 ### tomcat-users.xml
 
@@ -27,7 +27,7 @@ This will give you a short overview how to configure server and your project to 
 ```
 
 <br/><br/>
-## Maven setting
+## 3 Maven setting
 
 ### settings.xml
 > Usually stored in either in your maven installation folder or your .m2 folder. Windows user got to %UserProfile%\\.m2
