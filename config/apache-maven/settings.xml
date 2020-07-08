@@ -1,17 +1,49 @@
-<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
-  <localRepository/>
-  <interactiveMode/>
-  <usePluginRegistry/>
-  <offline/>
-
-  <servers>  
-    <server>
-       <id>LocalhostServer</id>
-       <username>manager</username>
-       <password>password</password>
-    </server>
-  </servers>
-
-  <activeProfiles/>
-  <pluginGroups/>
-</settings>
+    <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                          https://maven.apache.org/xsd/settings-1.0.0.xsd">
+      <localRepository/>
+      <interactiveMode/>
+      <offline/>
+      <pluginGroups/>
+	  
+	  <servers>  
+		<server>
+		   <id>localhost</id>
+		   <username>manager</username>
+		   <password>password</password>
+		</server>
+		<server>
+		   <id>development</id>
+		   <username>manager</username>
+		   <password>password</password>
+		</server>
+	  </servers>
+	  
+      <mirrors/>
+      <proxies/>
+      <profiles>
+		<profile>
+			<id>localhost</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<tomcat-server>localhost</tomcat-server>
+				<tomcat-url>http://localhost:8080/manager/text</tomcat-url>
+			</properties>
+		</profile>
+		<profile>
+			<id>development</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<properties>
+				<tomcat-server>Server XXXX</tomcat-server>
+				<tomcat-url>http://localhost:8080/manager/text</tomcat-url>
+			</properties>
+		</profile>
+      </profiles>
+	  
+      <activeProfiles/>
+    </settings>
