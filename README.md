@@ -2,8 +2,8 @@
 > The accompanying code for this workshop is [on Github](https://github.com/kleenxcoder/apache-tomcat-deploy-workshop).<br/>
 This will give you a short overview how to configure server and your project to be able to use maven to deploy your source to tomcat.
 
-<br/><br/>
-## * Setup
+<br/>
+## 1 Setup
 - In this workshop you'll need the latest Java version. Java 8 is the baseline for this workshop.
 - You'll need a newer, 3.1, version of Apache Maven installed.
 - Use ure desired IDE Apache NetBeans, Eclipse, IntelliJ IDEA, Visual Studio Code or vi
@@ -11,8 +11,8 @@ This will give you a short overview how to configure server and your project to 
 - Runnable local installation of Apache Tomcat https://tomcat.apache.org/
 - Open project [apache-tomcat-deploy-workshop](code-java/apache-tomcat-deploy-workshop/) in your IDE
 
-<br/><br/>
-* ## Apache Tomcat configuration
+<br/>
+## 2 Apache Tomcat configuration
 
 ### tomcat-users.xml
 
@@ -64,7 +64,7 @@ This will give you a short overview how to configure server and your project to 
 ```
 
 
-## Project configuration
+## 4 Project configuration
 > To make use of tomcat7-maven-plugin we need to add the plugin to our build section.
 
 ### pom.xml
@@ -85,7 +85,7 @@ This will give you a short overview how to configure server and your project to 
 ```
 
 
-## Deployment to Apache Tomcat
+## 5 Deployment to Apache Tomcat
 
 ### Manually using manager
 > Assuming your java project creates a WAR file you are ready to go. If not  After changing tomcat-users.xml you are ready to go for manual deployment. Open http://localhost:8080/manager/ in your browser and use credentials stored in tomcat-users.xml to login. Got to "WAR file to deploy", select your WAR file and press the "deploy" button.
@@ -114,15 +114,15 @@ mvn tomcat7:redeploy -Pdevelopment
 Tomcat7 maven plugin supports further goals. Hence see documentation http://tomcat.apache.org/maven-plugin-trunk/tomcat7-maven-plugin/plugin-info.html
 
 
-## Testing time
+## 6 Testing time
 > I have attached a spring boot application to this repository [apache-tomcat-deploy-workshop](code-java/apache-tomcat-deploy-workshop/). You run it locally in your IDE as spring boot application and you can deploy it to your tomcat. Both ways should result in the same result. You should get response from from following REST service http://localhost:8080/apache-tomcat-deploy-workshop/kleenxcoder/
 
 
-## Security
+## 7 Security
 > I recomand to use a different phrase than "password" for authentification on your system.
 
 
-## Troubleshooting
+## 8 Troubleshooting
 > To make your project running in Apache Tomcat servlet container we need to make use of Spring Boot ServletInitializer.
 
 ### New spring boot java project
@@ -134,15 +134,15 @@ Tomcat7 maven plugin supports further goals. Hence see documentation http://tomc
 ### Non spring projects
 
 
-## Tested with
+## 9 Tested with
 - Jdk 8 & Tomcat 7
 - Jdk 8 & Tomcat 8
 - Jdk 8 & Tomcat 9
 
-## References
+## 10 References
 - https://github.com/apache/tomcat-maven-plugin
 
-## Contact
+## 11 Contact
 > If you have any questions don't hesitate to reach out to me. Probably twitter will be the fastest way!
 
 twitter: https://twitter.com/kleenxcoder
