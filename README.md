@@ -96,7 +96,7 @@ This will give you a short overview how to configure server and your project to 
 mvn tomcat7:deploy
 ```
 
-> In real life you will have several servers and several passwords. In this case settings.xml comes in handy. We have one place for setting up our infrastucture and managing credentials. Make sure not to store these settings in pom.xml to avoid duplicate work and unnecessary storege and configuration duplication. 
+> In real life you will have several servers and several passwords. In this case settings.xml comes in handy. We have one place for setting up our infrastucture and managing credentials. Make sure not to store these settings in pom.xml to avoid duplicate work and unnecessary storege and configuration duplication.<br/>
 Have a closer look at at [pom.xml](code-java/apache-tomcat-deploy-workshop/pom.xml) where I already have provided a second sever. All you need to do is to replace localhost by the name of your host. To deploy our example application to this sever all we need to do is pass the server id by using prefix '-P'
 
 ```powershell
