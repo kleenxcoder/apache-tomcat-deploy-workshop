@@ -105,6 +105,14 @@ mvn tomcat7:deploy -P<server-id>
 mvn tomcat7:deploy -Pdevelopment
 ```
 
+> Please keep in mind that if you repeat the deploy command the second execution will fail. In this case you need to run redeploy.
+```powershell
+mvn tomcat7:redeploy -Pdevelopment
+```
+
+### Further commands
+Tomcat7 maven plugin supports further goals. Hence see documentation http://tomcat.apache.org/maven-plugin-trunk/tomcat7-maven-plugin/plugin-info.html
+
 
 ## Testing time
 > I have attached a spring boot application to this repository [apache-tomcat-deploy-workshop](code-java/apache-tomcat-deploy-workshop/). You run it locally in your IDE as spring boot application and you can deploy it to your tomcat. Both ways should result in the same result. You should get response from from following REST service http://localhost:8080/apache-tomcat-deploy-workshop/kleenxcoder/
