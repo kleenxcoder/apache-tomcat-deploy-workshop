@@ -11,6 +11,9 @@
 ## Apache Tomcat configuration
 
 ### tomcat-users.xml
+
+[sample code](config/tomcat/tomcat-users.xml)
+
 ```xml
 <tomcat-users>
     <role rolename="manager-gui"/>  
@@ -23,6 +26,8 @@
 
 ### settings.xml
 > Usually stored in either in your maven installation folder or your .m2 folder. Windows user got to %UserProfile%\.m2
+
+[sample code](config/maven/settings.xml)
 
 ```xml
 <servers>  
