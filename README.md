@@ -59,8 +59,26 @@
 ```
 
 ## Project configuration
+> To make use of tomcat7-maven-plugin we need to add the plugin to our build section.
 
 ### pom.xml
+
+[sample code](code-java/apache-tomcat-deploy-workshop/pom.xml)
+
+```xml
+<plugin>
+	<groupId>org.apache.tomcat.maven</groupId>
+	<artifactId>tomcat7-maven-plugin</artifactId>
+	<version>2.2</version>
+	<configuration>
+		<url>${tomcat-url}</url>
+		<server>${tomcat-server}</server>
+		<path>/${artifactId}</path>
+	</configuration>
+</plugin>
+```
+
+
 
 ## Deployment to Apache Tomcat
 
@@ -69,7 +87,7 @@
 
 ### Command line using Tomcat7 plugin
 
-## Java Project
+## Setup java project
 > To make your project running in the Apache Tomcat servlet container we need to make use of Spring Boot ServletInitializer.
 
 ### New java project
