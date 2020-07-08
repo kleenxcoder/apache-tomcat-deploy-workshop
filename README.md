@@ -106,21 +106,24 @@ mvn tomcat7:deploy -Pdevelopment
 ```
 
 
-## Setup java project
-> To make your project running in the Apache Tomcat servlet container we need to make use of Spring Boot ServletInitializer.
-
-### New java project
-> When creating a new java project by using [start.spring.io](https://start.spring.io/) and selecting WAR packaging you do not need to do anything. Spring initializr will create a seperate file called ServletInitializer.java which does the job.
-
-### Custom java project migration
-
-
 ## Testing time
 > I have attached a spring boot application to this repository [apache-tomcat-deploy-workshop](code-java/apache-tomcat-deploy-workshop/). You run it locally in your IDE as spring boot application and you can deploy it to your tomcat. Both ways should result in the same result. You should get response from from following REST service http://localhost:8080/apache-tomcat-deploy-workshop/kleenxcoder/
 
 
 ## Security
 > I recomand to use a different phrase than "password" for authentification on your system.
+
+
+## Troubleshooting
+> To make your project running in Apache Tomcat servlet container we need to make use of Spring Boot ServletInitializer.
+
+### New spring boot java project
+> When creating a new java project by using [start.spring.io](https://start.spring.io/) and selecting WAR packaging you do not need to do anything. Spring initializr will create a seperate file called ServletInitializer.java which does the job.
+
+### Srping boot java project without ServletInitializer
+> When you have an older spring boot application you will need to do some modifiactions to get it running. In this case go a head and use your favorite search engine and lookup for "Deploy a Spring Boot WAR into a Tomcat Server".
+
+### Non spring projects
 
 
 ## Tested with
