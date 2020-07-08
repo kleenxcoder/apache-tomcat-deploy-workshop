@@ -78,8 +78,6 @@
 </plugin>
 ```
 
-
-
 ## Deployment to Apache Tomcat
 
 ### Manually using manager
@@ -109,7 +107,11 @@ mvn tomcat7:deploy -Pdevelopment
 ### Custom java project migration
 
 ## Security
-> I recomand to use a different phrase than "password" for authentification on you system.
+> I recomand to use a different phrase than "password" for authentification on your system.
+
+## Testing time
+> I have attached a spring boot application to this repository [apache-tomcat-deploy-workshop](code-java/apache-tomcat-deploy-workshop/). You run it locally in your IDE as spring boot application and you can deploy it to your tomcat. Both ways should result in the same result. You should get response from from following REST service http://localhost:8080/apache-tomcat-deploy-workshop/kleenxcoder/
+
 
 ## Tested with
 - Jdk 8 & Tomcat 7
