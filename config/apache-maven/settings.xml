@@ -22,6 +22,7 @@
 	  
       <mirrors/>
       <proxies/>
+	  
       <profiles>
 		<profile>
 			<id>localhost</id>
@@ -39,7 +40,7 @@
 				<activeByDefault>false</activeByDefault>
 			</activation>
 			<properties>
-				<tomcat-server>Server XXXX</tomcat-server>
+				<tomcat-server>Your Custom Server change localhost to hostname and adapt port</tomcat-server>
 				<tomcat-url>http://localhost:8080/manager/text</tomcat-url>
 			</properties>
 		</profile>
