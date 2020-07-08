@@ -112,6 +112,7 @@ mvn tomcat7:redeploy -Pdevelopment
 
 ### Further commands
 Tomcat7 maven plugin supports further goals. Hence see documentation http://tomcat.apache.org/maven-plugin-trunk/tomcat7-maven-plugin/plugin-info.html
+
 <br/>
 
 ## 6 Testing time
@@ -133,6 +134,8 @@ Tomcat7 maven plugin supports further goals. Hence see documentation http://tomc
 > When you have an older spring boot application you will need to do some modifiactions to get it running. In this case go a head and use your favorite search engine and lookup for "Deploy a Spring Boot WAR into a Tomcat Server".
 
 ### Non spring projects
+> For non spring application use your favorite search engine and lookp for "How to Deploy a WAR File to Tomcat".
+
 <br/>
 
 ## 9 Tested with
