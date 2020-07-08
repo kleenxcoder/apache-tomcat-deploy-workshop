@@ -138,17 +138,11 @@ Tomcat7 maven plugin supports further goals. Hence see documentation http://tomc
 
 <br/>
 
-## 9 Tested with
-- Jdk 8 & Tomcat 7
-- Jdk 8 & Tomcat 8
-- Jdk 8 & Tomcat 9
-<br/>
-
-## 10 References
+## 9 References
 - https://github.com/apache/tomcat-maven-plugin
 <br/>
 
-## 11 Contact
+## 10 Contact
 > If you have any questions don't hesitate to reach out to me. Probably twitter will be the fastest way!
 
 twitter: https://twitter.com/kleenxcoder
