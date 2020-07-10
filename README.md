@@ -23,8 +23,8 @@ This will give you a short overview how to configure server and your project to 
 ```xml
 <tomcat-users>
     <role rolename="manager-gui"/>  
-        <role rolename="manager-script"/>   
-        <user username="manager" password="password" roles="manager-gui,manager-script" />  
+    <role rolename="manager-script"/>   
+    <user username="manager" password="password" roles="manager-gui,manager-script" />  
 </tomcat-users>
 ```
 <br/>
