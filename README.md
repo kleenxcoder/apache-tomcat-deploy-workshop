@@ -143,6 +143,18 @@ Tomcat7 maven plugin supports further goals. Hence see documentation http://tomc
 <packaging>war</packaging>
 ```
 
+### Error while uploading WAR
+> Usually this happen when your WAR file is bigger than 50MB. This is the default limit set under webapps\manager\WEB-INF\web.xml <br/> Add a 0 at the end to increase size to 500MB.
+
+```xml
+    <multipart-config>
+      <!-- 50MB max -->
+      <max-file-size>52428800</max-file-size>
+      <max-request-size>52428800</max-request-size>
+      <file-size-threshold>0</file-size-threshold>
+    </multipart-config>
+```
+
 <br/>
 
 ## 9 References
