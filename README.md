@@ -136,6 +136,13 @@ Tomcat7 maven plugin supports further goals. Hence see documentation http://tomc
 ### Non spring projects
 > For non spring application use your favorite search engine and lookp for "How to Deploy a WAR File to Tomcat".
 
+### Skipping non-war project
+> When running the deploy tast you get no error but the tomcat7-maven-plugin says 'Skipping non-war project'. In this case you need to set
+
+```xml
+<packaging>war</packaging>
+```
+
 <br/>
 
 ## 9 References
