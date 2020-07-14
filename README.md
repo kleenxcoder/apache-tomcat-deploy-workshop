@@ -79,7 +79,7 @@ This will give you a short overview how to configure server and your project to 
 	<configuration>
 		<url>${tomcat-url}</url>
 		<server>${tomcat-server}</server>
-		<path>/${artifactId}</path>
+		<path>/${project.artifactId}</path>
 	</configuration>
 </plugin>
 ```
