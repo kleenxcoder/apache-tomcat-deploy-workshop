@@ -157,11 +157,52 @@ Tomcat7 maven plugin supports further goals. Hence see documentation http://tomc
 
 <br/>
 
-## 9 References
+## 9 Spring Profiles
+> You have several possibilities to set spring active profile.
+
+### Addin VM Parameter
+> Independendet wether you do in on Windows or Unix you only need to add the following code at startup VM parameter
+```xml
+-Dspring.profiles.active=dev
+```
+
+### Using setenv file
+> Just got to %CATALINA_HOME%/bin and create create dependent on your operating system:
+
+#### On Windows setenv.bat
+```xml
+JAVA_OPTS=%JAVA_OPTS% -Dspring.profiles.active=dev
+```
+
+#### On Unix setenv.sh
+```xml
+JAVA_OPTS="$JAVA_OPTS -Dspring.profiles.active=dev"
+```
+
+## Using web.xml
+> You might also want to set the environment in your web.xml file. Therefore drop in the following sniplet
+```xml
+    <context-param>
+       <param-name>spring.profiles.active</param-name>
+       <param-value>dev</param-value>
+    </context-param>
+```
+
+## Using catalina.properties
+> A very common way is to set catalina.properties inside %CATALINA_HOME%/conf folder:
+```xml
+# Spring Profile
+spring.profiles.active=dev
+```
+
+<br/>
+
+
+## 10 References
 - https://github.com/apache/tomcat-maven-plugin
 <br/>
 
-## 10 Contact
+## 11 Contact
 > If you have any questions don't hesitate to reach out to me. Probably twitter will be the fastest way!
 
 twitter: https://twitter.com/kleenxcoder
