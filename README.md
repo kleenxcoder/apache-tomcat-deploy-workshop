@@ -159,6 +159,7 @@ Tomcat7 maven plugin supports further goals. Hence see documentation http://tomc
 
 ## 9 Spring Profiles
 > You have several possibilities to set spring active profile.
+> :warning: **Changes might require restart of Apache Tomcat**: Be aware!
 
 ### Addin VM Parameter
 > Independendet wether you do in on Windows or Unix you only need to add the following code at startup VM parameter
